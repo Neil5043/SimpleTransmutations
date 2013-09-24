@@ -22,13 +22,15 @@ public class ConfigHandler {
 		ItemInfo.TINY_GLOWSTONE_ID = config.getItem(ItemInfo.TINY_GLOWSTONE_KEY , ItemInfo.TINY_GLOWSTONE_DEFAULT).getInt() - 256;
 		ItemInfo.REDSTONE_GLOVE_ID = config.getItem(ItemInfo.REDSTONE_GLOVE_KEY , ItemInfo.REDSTONE_GLOVE_DEFAULT).getInt() - 256;
 		
+		BlockInfo.INVISIBLE_REDSTONE_ID = config.getBlock(BlockInfo.INVISIBLE_REDSTONE_KEY, BlockInfo.INVISIBLE_REDSTONE_DEFAULT).getInt();
+		
 		RecipeIDs.woodToObsidian = config.get("Recipes", RecipeIDs.WOOD_TO_OBSIDIAN_KEY, true).getBoolean(true);
 		RecipeIDs.woodToWood = config.get("Recipes", RecipeIDs.WOOD_TO_WOOD_KEY, true).getBoolean(true);
 		RecipeIDs.ironToGold = config.get("Recipes", RecipeIDs.IRON_TO_GOLD_KEY, true).getBoolean(true);
 		RecipeIDs.goldToDiamond = config.get("Recipes", RecipeIDs.GOLD_TO_DIAMOND_KEY, true).getBoolean(true);
 		RecipeIDs.ironToEnderpearl = config.get("Recipes", RecipeIDs.IRON_TO_ENDERPEARL_KEY, true).getBoolean(true);
 		RecipeIDs.inkTransmutation = config.get("Recipes", RecipeIDs.INK_TRANSMUTATION_KEY, true).getBoolean(true);
-		BlockInfo.MAX_TIME = config.get("Invisible Redstone", "pulseLength", 40).getInt();
+		BlockInfo.MAX_TIME = config.get("Invisible Redstone", "pulseLength", 60).getInt();
 	  /*RecipeIDs.allowBonemealTransmutation = config.get("Ink Transmutation Rules", RecipeIDs.ALLOW_BONEMEAL_KEY, false).getBoolean(false);
 		RecipeIDs.allowInkSacTransmutation = config.get("Ink Transmutation Rules", RecipeIDs.ALLOW_INK_KEY, false).getBoolean(false);
 		RecipeIDs.allowLapisTransmutation = config.get("Ink Transmutation Rules", RecipeIDs.ALLOW_LAPIS_KEY, false).getBoolean(false);*/

@@ -34,15 +34,11 @@ public class ItemRedstoneGlove extends Item{
 	@Override
 	public boolean onItemUseFirst(ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float hitX, float hitY, float hitZ) 
 	{
-		System.out.println("Server: " + !world.isRemote);
 		if (!world.isRemote && world.isAirBlock(x, y + 1, z))
 			{
 				world.setBlock(x, y + 1, z, BlockInfo.INVISIBLE_REDSTONE_ID, 0, 3);
-				System.out.println(world.isBlockIndirectlyGettingPowered(x, y, z));
-				System.out.println("Placed!");
 				return false;
 			}
-		System.out.println("NOT PLACED");
 		return false;
 	}
 }

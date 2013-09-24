@@ -13,11 +13,11 @@ public class BlockInfo {
 		public static final String CHAIN_SMELTER_LOC_NAME = "Chain Smelter";
 		public static final String CHAIN_SMELTER_ICON = "chainSmelter";
 		
-		public static int INVISIBLE_REDSTONE_ID = 3001;
+		public static int INVISIBLE_REDSTONE_ID = 3000;
 		public static final String INVISIBLE_REDSTONE_KEY = "invisRedstone";
-		public static final int INVISIBLE_REDSTONE_DEFAULT = 3001;
+		public static final int INVISIBLE_REDSTONE_DEFAULT = 3000;
 		public static final String INVISIBLE_REDSTONE_UNLOC_NAME = "invisibleRedstone";
 		public static final String INVISIBLE_REDSTONE_LOC_NAME = "DON'T TOUCH";
 		public static final String INVISIBLE_REDSTONE_ICON = "invisibleRedstone";
-		public static int MAX_TIME = 40;
+		public static int MAX_TIME = 60;
 }
